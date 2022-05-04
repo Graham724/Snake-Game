@@ -105,8 +105,8 @@ function placeFood() {
     foodY = Math.floor(Math.random() * rows) * blockSize;
 }
 
-function restart() {
-    clearInterval(game)
-    game = setInterval(draw, 100)
-    update();
-}
+//Restart button
+document.querySelector('.restart-btn').addEventListener('click', function(){
+    window.location.reload();
+    return false;
+  });

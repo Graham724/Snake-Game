@@ -1,4 +1,19 @@
 body {
     font-family:'Courier New', Courier, monospace;
     text-align: center;
+    background-color: grey;
+}
+
+h1 {
+    border: 1 solid black;
+}
+
+
+
+#btn {
+    border: 1 solid black;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 20px;
+    font-family: Courier;
 }
