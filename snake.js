@@ -1,0 +1,1 @@
+export const Snake_Speed = 2;
