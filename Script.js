@@ -104,3 +104,9 @@ function placeFood() {
     foodX = Math.floor(Math.random() * cols) * blockSize;
     foodY = Math.floor(Math.random() * rows) * blockSize;
 }
+
+function restart() {
+    clearInterval(game)
+    game = setInterval(draw, 100)
+    update();
+}
