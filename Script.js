@@ -19,6 +19,7 @@ let foodX;
 let foodY;
 
 let gameOver = false;
+let score = 0;
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -29,6 +30,8 @@ window.onload = function() {
     placeFood();
     document.addEventListener("keyup", changeDirection);
     setInterval(update, 1000/10); //updates every 100 milliseconds
+
+    
 }
 
 function update() {
@@ -41,6 +44,8 @@ function update() {
     if (snakeX == foodX && snakeY == foodY) {
         snakeBody.push([foodX, foodY]);
         placeFood();
+        score++;
+        scoreBoard.textContent = score;
     }
 
     for (let i= snakeBody.length-1; i>0; i--) {
