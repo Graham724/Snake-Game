@@ -25,17 +25,22 @@ body {
 h1 {
     border: 1 solid black;
     background-color: white;
+    height:35px;
+    width: 200px;
     border-radius: 25px;
-    margin-left: 280px;
-    margin-right: 280px;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin:auto;
 }
 
 #scoreBoard {
     border: 1 solid black;
-    margin-left: 280px;
-    margin-right: 280px;
-    margin-bottom: 10px;
+    font-weight: bold;
+    height:25px;
+    width: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    margin:auto;
+    text-align: center;
     padding: 0.5em;
     border-radius: 20px;
     background-color: white;
