@@ -81,6 +81,11 @@ function update() {
     }
 }
 
+/**
+ * If the user presses an arrow key, and the snake is not moving in the opposite direction, change the
+ * snake's direction.
+ * @param e - the event object
+ */
 function changeDirection(e) {
     if (e.code == "ArrowUp" && velocityY != 1){
         velocityX = 0;
