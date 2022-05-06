@@ -51,9 +51,62 @@ h1 {
     padding: 0.5em;
 }
 
-.restart-btn {
-    border: 1 solid black;
-    margin: auto;
-    padding: 0.5em;
-    border-radius: 20px;
+:root {
+    --primary-color: #ccc9c9;
 }
+
+* {
+    margin: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-out;
+  }
+  
+  .btn--primary {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn--primary::after {
+    background-color: var(--primary-color);
+  }
+  
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover::after {
+    transform: scale(1.4, 1.6);
+    opacity: 0;
+  }
+  
+  .btn:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+  }

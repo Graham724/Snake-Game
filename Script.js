@@ -1,7 +1,7 @@
 // Board
 let blockSize = 25;
 let rows = 25;
-let cols = 25;
+let cols = 30;
 let board;
 let context;
 
@@ -111,7 +111,7 @@ function placeFood() {
 }
 
 //Restart button
-document.querySelector('.restart-btn').addEventListener('click', function(){
+document.getElementById("restart-btn").addEventListener('click', function(){
     window.location.reload();
     return false;
   });
